@@ -73,12 +73,6 @@ weechat.controller('WeechatCtrl', ['$rootScope', '$scope', '$store', '$timeout',
     });
     $scope.settings = settings;
 
-    //For upgrade reasons because we changed the name of host to hostField
-    //check if the value might still be in the host key instead of the hostField key
-    if (!settings.hostField && settings.host) {
-        settings.hostField = settings.host; 
-    }
-
     $rootScope.countWatchers = function () {
         $log.debug($rootScope.$$watchersCount);
     };
