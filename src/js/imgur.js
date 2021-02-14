@@ -56,7 +56,7 @@ weechat.factory('imgur', ['$rootScope', 'settings', function($rootScope, setting
 
         // Post request to imgur api
         var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "https://api.imgur.com/3/image", true);
+        xhttp.open("POST", "https://cynu.cynthia.re/compat/imgur/image", true);
         authenticate(xhttp);
         xhttp.setRequestHeader("Accept", "application/json");
 
